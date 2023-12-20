@@ -53,6 +53,12 @@ nav {
     font-size: 1.5rem;
 }
 
+.nav-links li a {
+    opacity: 0;
+    animation: slideTop .4s ease forwards;
+    animation-delay: calc(.3s * var(--i));
+}
+
 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -68,6 +74,9 @@ a:hover {
     font-size: 2.25rem;
     font-weight: 600;
     color: rgb(253, 193, 31);
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .8s;
 }
 
 .logo:hover {
@@ -170,6 +179,9 @@ a:hover {
     height: 400px;
     width: 400px;
     margin: auto 0;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
 }
 
 .section__text {
@@ -184,18 +196,28 @@ a:hover {
 .section__text__p1 {
     text-align: center;
     color: rgb(255, 255, 255);
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+    
 }
 
 .section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
 }
 
 .title {
     font-size: 3rem;
     text-align: center;
     color: rgb(253, 193, 31);
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .7s;
 }
 
 #social-container {
@@ -214,8 +236,14 @@ a:hover {
     border: 0.1rem solid rgb(255, 255, 255);
     border-radius: 50%;
     font-size: 20px;
+    background: rgb(34, 34, 34);
     color: rgb(255, 255, 255);
     text-decoration: none;
+    transition: .2s ease;
+    opacity: 0;
+    animation: slideLeft .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    margin: 30px 15px 30px 0;
 }
 
 .home-sc1 a:hover {
@@ -223,6 +251,13 @@ a:hover {
     color: #000;
     box-shadow: 0 0 20px rgb(253, 193, 31);
     border: 0.1rem solid rgb(255, 255, 255);
+}
+
+.btn .con:hover {
+    background: rgb(253, 193, 31);
+    color: #000;
+    box-shadow: 0 0 20px rgb(253, 193, 31);
+    text-decoration: none;
 }
 
 .icon {
@@ -237,6 +272,9 @@ a:hover {
     justify-content: center;
     margin: 1rem;
     gap: 1rem;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .8s;
 }
 
 .btn {
@@ -350,7 +388,7 @@ a:hover {
 }
 
 .skill-sub-title {
-    color: rgb(253, 193, 31);
+    color: rgb(34, 34, 34);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -406,11 +444,22 @@ article {
     color: #000;
     border-color: rgba(253, 193, 31);
 }
+
+.project-btn:hover {
+    background: rgb(0, 255, 179);
+    box-shadow: 0 0 20px rgb(0, 255, 179);
+    color: #000
+}
+
+.project-btn a {
+    color: #000;
+    text-decoration: none;
+}
 /* project end */
 
 /* contact */
 #contact {
-    min-height: 100vh;
+    min-height: 110vh;
     padding: 50px;
     text-align: center;
 }
@@ -454,6 +503,25 @@ textarea:focus {
 
 .contact-text {
     padding-top: 2rem;
+}
+
+.btn-cont {
+    font-weight: 300;
+    transition: all 300ms ease;
+    padding: 0.5rem;
+    width: 4rem;
+    border-radius: 4rem;
+    color: rgb(255, 255, 255);
+}
+
+.color-cont {
+    background-color: rgb(255, 255, 255);
+    border: #000 0.1rem solid;
+    color: #000;
+}
+.color-cont:hover {
+    background-color: rgb(0, 102, 255);
+    border: #000 0.1rem solid;
 }
 /* contact end */
 

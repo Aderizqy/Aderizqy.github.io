@@ -45,10 +45,10 @@
 @media screen and (max-width: 600px) {
     
     footer {
-        height: 50vh;
+        height: 45vh;
     }
     #home {
-        height: 88vh;
+        height: 85vh;
     }
     article {
         font-size: 1rem;
@@ -107,6 +107,9 @@
     }
     .text-container {
         text-align: justify;
+    }
+    .icontact {
+        display: none;
     }
 }
 
